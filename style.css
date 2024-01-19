@@ -1,0 +1,72 @@
+/* Styling for the entire page */
+body {
+    display: flex;
+    min-width: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: lightcyan;
+}
+
+/* Styling for the chess board container */
+.chess-board {
+    margin-top: 50px;
+    width: 480px;
+    height: 480px;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Styling for the squares containing SVG elements */
+.square svg {
+    width: 40px;
+    height: 40px;
+    margin: 8px;   
+    position: relative;
+    z-index: -9;
+}
+
+/* Styling for the path element within SVGs */
+path {
+    position: relative;
+    z-index: -10;
+}
+
+/* Styling for chess pieces */
+.piece {
+    position: relative;
+    z-index: 9;
+}
+
+/* Styling for individual squares on the chess board */
+.square {
+    width: 60px;
+    height: 60px; 
+    position: relative;
+}
+
+/* Styling for squares with beige background */
+.beige {
+    background-color: #636358;
+}
+
+/* Styling for squares with brown background */
+.brown {
+    background-color: #779556;
+}
+
+/* Styling for squares with black background using SVG fill */
+.black {
+    fill: #2c2b29;
+}
+
+/* Styling for squares with white background using SVG fill */
+.white {
+    fill: rgba(255, 255, 255, 0.739);
+}
+
+/* Styling for spans with red text color */
+span {
+    color: red;
+}
